@@ -1,21 +1,55 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>NVL-CSS-P6b</title>
-	<link rel="stylesheet" type="text/css" href="style.css"> 
-  <style type="text/css">
-
-
-	</style>
-</head>
-
-<body>
-  <ol>
-    <li>Tiene que ir dentro de una tabla</li>
-    <li>Está desordenado</li>
-    <li>No viene lo que tienes que meter en cada input</li>
-    <li>Falta un botón de enviar</li>
-  </ol>
-</body>
-
+	<head>
+		<meta charset="utf-8">
+			<title>Elementos en línea y en bloque</title>
+        <style type="text/css">
+strong{
+  background-color: cadetblue;
+}
+        </style>        
+	</head>
+		<body>
+        <form method="post" action="miservidor.php">
+            <div>
+              <label for=”codigo”>Introduzca su código postal:</label>
+              <input id=”codigo” type=”text”>
+            </div>
+            <div>
+                <label for=”nivel”>Nivel de satisfación del producto:</label>
+                <select id=”nivel”>
+                  <option value=”1”>1</option>
+                  <option value=”2”>2</option>
+                  <option value=”3”>3</option>
+                  <option value=”4”>4</option>
+                  <option value=”5”>5</option>
+                  <option value=”6”>6</option>
+                  <option value=”7”>7</option>
+                  <option value=”8”>8</option>
+                  <option value=”9”>9</option>
+                  <option value=”10”>10</option>
+                </select>
+            </div>
+            <div>
+                <label for=”email”>Introduzca su email:</label>
+                <input id=”email” type=”text”>
+              </div>
+              <div>
+                  <label for=”puntos+”>¿Qué puntos positivos nos daría del producto?:</label>
+                  <textarea id=”comentario”></textarea>
+                </div>
+                <div>
+                    <label for=”puntos-”>¿Qué puntos negativos nos daría del producto?:</label>
+                    <textarea id=”comentario”></textarea>
+                  </div>
+                  <div>
+                      <label for=”servicio”>Atención al cliente:</label>
+                      <select id=”servicio”>
+                          <option value=”Excelente”>Excelente</option>
+                          <option value=”Bueno”>Bueno</option>
+                          <option value=”Regular”>Regular</option>
+                          <option value=”Pésimo”>Pésimo</option>
+                  </div>
+       </form>
+		</body>
 </html>
